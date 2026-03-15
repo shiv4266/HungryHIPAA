@@ -1,0 +1,24 @@
+hungryHIPAA 🦛
+│
+├── public/
+│   ├── dashboard_summary.json
+│   ├── top_conditions_chart.png
+│   └── encounter_types_chart.png
+│
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── scripts/
+│   ingest.py
+│   clean.py
+│   load_db.py
+│   analyze.py
+│
+├── data/
+├── docs/
+├── hungryhipaa.db
+├── run_pipeline.py
+├── package.json
+└── index.html

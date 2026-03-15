@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-bg: #0b1220;
+  --color-bg-elevated: #111a2b;
+  --color-surface: #141f33;
+  --color-surface-soft: #1a2740;
+
+  --color-text: #ce84ff;
+  --color-text-muted: #9fb0c7;
+
+  --color-border: #24324d;
+
+  --color-primary: #22d3ee;
+  --color-primary-hover: #06b6d4;
+
+  --color-secondary: #4f8cff;
+  --color-secondary-hover: #3b74e8;
+
+  --color-purple: #9b6bff;
+  --color-purple-hover: #9b6bff;
+
+  --color-accent: #f64459;
+  --color-success: #34d399;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0b1220 0%, #0f1728 100%);
+  color: var(--color-text);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.app-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.app-nav {
+  background: rgba(11, 18, 32, 0.75);
+  border-color: var(--color-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.app-header,
+.app-card {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.app-header {
+  background: linear-gradient(180deg,
+      rgba(20, 31, 51, 0.96),
+      rgba(20, 31, 51, 0.88));
+}
+
+.app-card {
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.app-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: rgba(155, 107, 255, 0.45);
+}
+
+.app-brand,
+.app-heading,
+.app-section-title {
+  color: var(--color-text);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.app-heading {
+  letter-spacing: -0.02em;
+}
+
+.app-subtext,
+.app-metric-label {
+  color: var(--color-text-muted);
+}
+
+.app-metric-value {
+  color: var(--color-primary);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.app-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.app-link:hover {
+  color: var(--color-accent);
+}
+
+.app-logo {
+  display: block;
+}
+
+.app-chart {
+  display: block;
+  border-color: var(--color-border);
+}
+
+.app-file-input {
+  color: var(--color-text-muted);
+}
+
+.app-file-input::file-selector-button {
+  margin-right: 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-soft);
+  color: var(--color-text);
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.app-upload-button,
+.app-download-button {
+  border: 1px solid transparent;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.app-upload-button {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+}
+
+.app-download-button {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-purple));
+}
+
+.app-file-name {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.app-status {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
